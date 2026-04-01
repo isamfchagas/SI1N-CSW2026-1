@@ -8,17 +8,41 @@
 </head>
 
 <body>
+
     <h1>AUDIOS E VÍDEOS</h1>
 
-    <a href="./videos/youtube.html"><img src="./img/youtube.jfif" alt="icone youtube"></a>
-    <a href="./videos/vimeo.html"><img src="./img/vimeo.png" alt="icone vimeo"></a>
+    <table border="1">
+        <tr>
+            <td>
+                <a href="./sites de video/youtube.html"><img src="./img/youtube.jfif" alt="icone youtube"></a>
+            </td>
 
-    <p>Esta página demonstra em arquivo de audio em html</p>
-    <audio preload="metadata" controls autoplay loop source src="./audio/audio_hino-flamengo.mp3" type="audio/mpeg">
-        <!--<source src="midia/hino.ogg" type="audio/ogg">
-<source src="midia/hino.wav" type="audio/wav">-->
-       </p>
-    </audio>
+            <td>
+                <a href="./sites de video/vimeo.html"><img src="./img/vimeo.png" alt="icone vimeo"></a>
+            </td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td>
+                <p>Esta página demonstra em arquivo de audio em html</p>
+            </td>
+
+            <td rowspan="2">
+                <video width="400" poster="./img/thumb-gatinho.jpg" controls autoplay>
+                    <source src="./video/gatinhos-miando.mp4" type="video/mp4" type="video/webm">
+                </video>
+            </td>
+        </tr>
+
+        <tr>
+            <td><audio preload="metadata" controls autoplay loop source src="./audio/audio_hino-flamengo.mp3"
+                    type="audio/mpeg"></audio> </td>
+            </td>
+        </tr>
+
+    </table>
 </body>
 
 </html>
