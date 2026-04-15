@@ -50,16 +50,19 @@
             </td>
         </tr>
         <tr>
-            <td>Esporte favorito: 
-            <select name="esportes" id="">
-                <option value="">Selecione</option>
-                <option value="basquete">Basquete</option>
-                <option value="futebol">Futebol</option>
-                <option value="volei">Vôlei</option>
-                <option value="tenis">Tênis</option>
-            </select></td>
+            <td>Esporte favorito:
+                <select name="esportes" id="">
+                    <option value="">Selecione</option>
+                    <option value="basquete">Basquete</option>
+                    <option value="futebol">Futebol</option>
+                    <option value="volei">Vôlei</option>
+                    <option value="tenis">Tênis</option>
+                </select>
+            </td>
+
             <td>Investimentos:
                 <select name="Investimentos" id="">
+
                     <option value="">Poupança</option>
                     <option value="">CDB</option>
                     <option value="">Tesouro Direto</option>
@@ -75,8 +78,24 @@
             </td>
         </tr>
         <tr>
-            <td>Escolha uma cor:</td>
-            <td>Selecione um arquivo</td>
+            <td><label for="cor">Escolha uma cor:</label>
+                <input type="color" id="cor" name="cor"> <br>
+            </td>
+            <td>
+                <label for="arquivo">Selecione um arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" value="Esolher arquivo"><br>
+            </td>
+        <tr>
+            <td colspan="2">
+                <label for="data-hora">Data e Hora envio:</label>
+                <input type="datetime-local" id="data-hora" name="data-hora" value=""><br> <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="Enviar" id="" value="Enviar">
+            </td>
+            <td><input type="reset" name="Limpar" id="" value="Limpar"></td>
         </tr>
 
     </table>
