@@ -1,0 +1,13 @@
+        body {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+        color: lightgreen ;
+        background-color: purple;
+        }
+    h1 {
+        font-size: 2em;
+        color: black;
+    }
+    h2{
+        color: grey;
+    }
