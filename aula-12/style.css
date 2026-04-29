@@ -1,0 +1,39 @@
+.corpo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.spotify {
+    background-color: darkkhaki;
+    padding: 50px;
+    margin: 10px;
+    width: 20%;
+
+}
+
+.spotify:hover {
+    background-color: pink;
+}
+
+.youtube {
+    background-color: rgb(255, 110, 110);
+    padding: 50px;
+    margin: 10px;
+    width: 20%;
+}
+
+.youtube:hover {
+    background-color: rgb(125, 236, 255);
+}
+
+.amazon {
+    background-color: rgb(177, 177, 177);
+    padding: 50px;
+    margin: 10px;
+    width: 20%;
+}
+
+.amazon:hover {
+    background-color: rgb(81, 79, 204);
+}
