@@ -1,0 +1,36 @@
+
+.header {
+    background-color: cornflowerblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.divmain {
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    margin: 10px;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.infoButton {
+    background-color: cornflowerblue;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.divmain:hover {
+    background-color: rgb(211, 227, 255);
+}
