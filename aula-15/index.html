@@ -1,96 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        .calculadora {
-            flex-direction: column;
+        body {
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
+
+        }
+
+        .calculadora {
+            background-color: cornflowerblue;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 15%;
+            width: 35%;
+            border: none;
+            border-radius: 25px;
+           
+
+
         }
 
         .botoes {
-            
-            display: grid;
+
+            display: block;
+            align-content: center;
+            justify-content: center;
+            gap: 10px;
+
+        }
+
+        .dia {
+            width: 60px;
+        }
+
+        .mes {
+            width: auto;
+
+        }
+
+        .ano {
+            width: 350x;
+        }
+
+        .botaoCalc {
+            display: flex;
             align-items: center;
-            grid-template-columns: repeat(4, 1fr);
-            
+            justify-content: center;
+            padding-top: 30px;
+            width: 100%;
         }
-        .botoes button {
-            background-color: lightpink;
-            color: #fff;
-            width: 40px;
-            height: 40px;
+
+        .calcular {
+            width: 90%;
         }
+
     </style>
 </head>
+
 <body>
-    <div>
-        <div>
-
-            <label for="">Ano</label>
-            <input type="date" name="Ano" id="">
-            <button>calcular</button>
-
-        </div>
-        <div>
-            <p>
-                Você tem anos
-            </p>
-        </div>
-    </div>
 
     <div class="calculadora">
-    <input type="text" id="display" disabled>
 
-    <div class="botoes">
-      <button onclick="('7')">7</button>
-      <button onclick="adicionar('8')">8</button>
-      <button onclick="adicionar('9')">9</button>
-      <button onclick="adicionar('/')">÷</button>
 
-      <button onclick="adicionar('4')">4</button>
-      <button onclick="adicionar('5')">5</button>
-      <button onclick="adicionar('6')">6</button>
-      <button onclick="adicionar('*')">×</button>
 
-      <button onclick="adicionar('1')">1</button>
-      <button onclick="adicionar('2')">2</button>
-      <button onclick="adicionar('3')">3</button>
-      <button onclick="adicionar('-')">−</button>
+        <div class="botoes">
 
-      <button onclick="adicionar('0')">0</button>
-      <button onclick="limpar()">C</button>
-      <button onclick="calcular()">=</button>
-      <button onclick="adicionar('+')">+</button>
+            <label>Dia:</label>
+            <input type="number" value="" min="1" max="31" class="dia">
+
+            <label>Mês:</label>
+            <select name="meses" id="mesNascimento" class="mes">
+                <option value="">-</option>
+                <option value="Janeiro">Janeiro</option>
+                <option value="Fevereiro">Fevereiro</option>
+                <option value="Março">Março</option>
+                <option value="Abril">Abril</option>
+                <option value="Maio">Maio</option>
+                <option value="Junho">Junho</option>
+                <option value="Julho">Julho</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setembro">Setembro</option>
+                <option value="Outubro">Outubro</option>
+                <option value="Novembro">Novembro</option>
+                <option value="Dezembro">Dezembro</option>
+
+            </select>
+            <label>Ano:</label>
+            <input type="number" value="" min="1900" max="2026" class="ano">
+
+        </div>
+        <div class="botaoCalc">
+            <button class="calcular">Calcular</button>
+        </div>
+
+
     </div>
-  </div>
 
-<script>
+    <script>
 
-    function calculaIdade ()
-    {
-        let anoNAscimento = document.getElementById ("anoNascimento").value
-        let idade = 0;
-        let anoAtual = new Date().getFullYear();
+        function calculaIdade() {
+            let anoNascimento = document.getElementById("anoNascimento").value
+            let idade = 0;
+            let anoAtual = new Date().getFullYear();
 
-        aler(new Date()     )
+            alert(new Date())
 
-        idade = anoAtual - anoNAscimento
+            idade = anoAtual - anoNAscimento
 
-        if (anoNascimento == 0) {
-            alert("Digite um ano válido")
-            return
+            if (anoNascimento == 0) {
+                alert("Digite um ano válido")
+                return
+            }
+
+            document.getElemetById("resultado").innerHTML = "Sua Idade é : " + idade
         }
-
-        document.getElemetById("resultador").innerHTML = "Sua Idade é : " + idade
-    }
-</script>
+    </script>
 
 </body>
+
 </html>
